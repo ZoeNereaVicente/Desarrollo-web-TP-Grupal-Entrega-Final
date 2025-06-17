@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrito - Disneyland Abu Dhabi</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/css-carrito/Carrito.css">
+</head>
+<body>
+    <header>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+        <img src="img/Logo Disneyland Blanco.png" alt="Logo Disney Abu Dhabi Blanco" class="Logo">
+        <!--Navbar Computadora-->
+        <nav class="desktop-menu">
+            <ul>
+                <li><a href="index.html"style="text-decoration: none;" >Home</a></li>
+                <li><a href="Tickets.html"style="text-decoration: none;">Tickets</a></li>
+                <li><a href="Parque.html"style="text-decoration: none;">Conocé el parque</a></li>
+                <li><a href="Hospedaje.html"style="text-decoration: none;">Hospedaje mágico</a></li>
+                <li><a href="Reglas.html"style="text-decoration: none;">Reglas</a></li>
+            </ul>
+       </nav>
+        <button class="menu-toggle">
+            <i class="fas fa-bars"></i>
+        </button>
+        <!--Navbar Celular-->
+        <nav class="mobile-menu">
+            <ul>
+                <li><a href="index.html"style="text-decoration: none;">Home</a></li>
+                <li><a href="Tickets.html"style="text-decoration: none;">Tickets</a></li>
+                <li><a href="Parque.html"style="text-decoration: none;">Conocé el parque</a></li>
+                <li><a href="Hospedaje.html"style="text-decoration: none;">Hospedaje mágico</a></li>
+                <li><a href="Reglas.html"style="text-decoration: none;">Reglas</a></li>
+            </ul>
+        </nav>
+        <button class="carrito-btn" onclick="agregarAlCarrito()">
+            <i class="fas fa-shopping-cart"></i>
+            <span id="contador">0</span>
+        </button>
+    </header>
+    <main>
+        <div class="contenedor">
+            <div>
+                <h1>Carrito</h1>
+                <p>Terminá de personalizar tu experiencia</p>
+                <h3>¿Cuántos días vas a disfrutar?</h3>
+            </div>
+            <div class="botones-dias">
+                <button>5 Días<br><small>$104.64 / día</small></button>
+                <button>6 Días<br><small>$98.48 / día</small></button>
+                <button>7 Días<br><small>$92.71 / día</small></button>
+                <button>8 Días<br><small>$88.06 / día</small></button>
+                <button>9 Días<br><small>$84.61 / día</small></button>
+                <button>10 Días<br><small>$81.46 / día</small></button>
+            </div>
+            <div class="mes">
+                <div class="navegacion-mes">
+                    <button id="btn-anterior">&lt;</button>
+                    <span id="mes-actual">Junio 2025</span>
+                    <button id="btn-siguiente">&gt;</button>
+                </div>
+            </div>
+            <div class="dias-semana">
+                <div>Lun</div>
+                <div>Mar</div>
+                <div>Mié</div>
+                <div>Jue</div>
+                <div>Vie</div>
+                <div>Sáb</div>
+                <div>Dom</div>
+            </div>
+            <div class="calendario" id="calendario">
+                <!-- Calendario generado dinámicamente -->
+            </div>
+            <div class="contenedor-zonas">
+                <h2>[N cantidad de días] en:</h2>
+                <div class="zonas">
+                    <div class="zona">
+                        <div class="imagen-oasis-de-los-suenos"></div>
+                        <p class="titulo-verde">Oasis de los Sueños</p>
+                    </div>
+                    <div class="zona">
+                        <div class="imagen-reino-del-manana"></div>
+                        <p class="titulo-celeste">Reino del Mañana</p>
+                    </div>
+                    <div class="zona">
+                        <div class="imagen-tierra-de-leyendas"></div>
+                        <p class="titulo-verde">Tierra de Leyendas</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="contenedor-hospedaje">
+            <h2>Hospedarte en <img src="./img/Logo Disneyland Azul.png" alt="Logo Disney Abu Dhabi Azul" class="Logo"></h2>
+            <p class="precio">[N cant. días] sólo por: <strong>499.9usd +</strong></p>
+            <p class="detalle">
+            Hospedaje en la <img src="./img/The Walt Disney Suite.png" alt="" class=""> con desayuno y cena incluidos, en <a href="Hospedaje.html"style="text-decoration: none;">Dreams in the clouds</a>, dentro del parque.
+            </p>
+            <div class="botones-hospedaje">
+                <button class="btn-azul">Añadir al carrito</button>
+                <button class="btn-gris">No, gracias.</button>
+            </div>
+        </div>
+        <div class="contenedor1">
+            <div class="imagen">
+                <img src="img/Elige la magia de tu destino.png" alt="Tickets magia destino" class="ticket"/>
+            </div>
+            <div class="contenido">
+                <h3>Elige la magia de tu destino</h3>
+                <p><b>Cantidad de tickets:</b> 2</p>
+                <p><b>Cantidad de días:</b> 5</p>
+                <p><b>Parque seleccionado:</b> Reino del Mañana</p>
+                <p><b>Hospedaje mágico:</b> No.</p>
+                <div class="linea-divisoria"></div>
+                <p class="detalle">2 x Elige la Magia de tu Destino. Mayores de 10 años. 119.9usd por ticket / día.</p>
+                <p class="total">TOTAL: 1198.9usd</p>
+                <p><b>Precio estimado en<br />Pesos argentinos:</b> <span class="precio-ars">$1.390.724</span></p>
+                <p class="cotizacion">1 Dólar = $1.160 pesos argentinos</p>
+                <button class="boton">Continuar</button>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>Trabajo grupal - Materia Diseño y Desarrollo Web - Curso 15130 - Grupo 4</p>
+        <p><a href="https://zoenereavicente.github.io/Desarrollo-web-TP-Grupal-Avances/" style="text-decoration: none;">Sitio del grupo</a></p>
+        <ul>
+            <h3>Integrantes</h3>
+            <li>Kidyba, Lautaro Agustin</li>
+            <li>Marquez Marcoguiseppe, Santino Isaac</li>
+            <li>Pellegrini, Francesco</li>
+            <li>Rodriguez, Joaquin</li>
+            <li>Vicente, Zoe Nerea</li>
+        </ul>
+        <img src="img/Logo_UADE.svg" alt="Logo UADE">
+    </footer>
+    <script src="carrito.js"></script>
+</body>
+</html>
