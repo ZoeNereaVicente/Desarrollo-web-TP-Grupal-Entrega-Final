@@ -1,0 +1,75 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.ventana-confirmacion {
+    background-color: #e2dddd4a;
+    padding: 30px;
+    width: 800px;
+    text-align: center;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+h2 {
+    color: #0077a5;
+    margin-bottom: 10px;
+}
+
+.mensaje {
+    font-weight: bold;
+    font-size: 18px;
+    color: #0077a5;
+}
+
+.detalle, .descarga {
+    font-size: 14px;
+    margin: 12px 0;
+    color: #555;
+}
+
+.email-dinamico {
+    font-weight: bold;
+    color: #0077a5;
+}
+
+.botones {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    justify-content: space-between; 
+    margin: 20px 0
+}
+
+button {
+    width: 30%; 
+    padding: 10px 10px;
+    font-size: 16px;
+    border-radius: 35px;
+    cursor: pointer;
+    border: none; 
+}
+
+.btn-azul {
+    background-color: #0077a5;
+    color: white;
+    width: 20%;
+}
+
+.btn-verde {
+    background-color: #09ca15;
+    color: white;
+    width: 15%;
+}
+
+.btn-rojo {
+    width: 25%;
+    font-size: 12px;
+    background-color: #d9534f;
+    color: white;
+}
