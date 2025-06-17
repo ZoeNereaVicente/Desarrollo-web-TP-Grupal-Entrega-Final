@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - Disneyland Abu Dhabi</title>
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+        <img src="img/Logo Disneyland Blanco.png" alt="Logo Disney Abu Dhabi Blanco" class="Logo">
+        <!--Navbar Computadora-->
+        <nav class="desktop-menu">
+            <ul>
+                <li><a href="index.html"style="text-decoration: none;" >Home</a></li>
+                <li><a href="Tickets.html"style="text-decoration: none;">Tickets</a></li>
+                <li><a href="Parque.html"style="text-decoration: none;">Conocé el parque</a></li>
+                <li><a href="Hospedaje.html"style="text-decoration: none;">Hospedaje mágico</a></li>
+                <li><a href="Reglas.html"style="text-decoration: none;">Reglas</a></li>
+            </ul>
+       </nav>
+        <button class="menu-toggle">
+            <i class="fas fa-bars"></i>
+        </button>
+        <!--Navbar Celular-->
+        <nav class="mobile-menu">
+            <ul>
+                <li><a href="index.html"style="text-decoration: none;">Home</a></li>
+                <li><a href="Tickets.html"style="text-decoration: none;">Tickets</a></li>
+                <li><a href="Parque.html"style="text-decoration: none;">Conocé el parque</a></li>
+                <li><a href="Hospedaje.html"style="text-decoration: none;">Hospedaje mágico</a></li>
+                <li><a href="Reglas.html"style="text-decoration: none;">Reglas</a></li>
+            </ul>
+        </nav>
+        <button class="carrito-toggle" onclick="toggleCarrito()">
+            <img src="./img/lampara-genio.png" alt="Carrito" style="width: 40px; height: 30px;">
+        </button>
+        <div id="carrito-panel" class="carrito-panel oculto">
+            <h2>¡Tu experiencia está llena de magia!</h2>
+            <p class="carrito">Actualmente llevás:</p>
+            <ul>
+                <li>x2 - Un mundo Ideal.</li>
+                <li>x1 - Experiencia Tecnomagia</li>
+            </ul>
+            <hr>
+            <h3>¡Duerme en Disney Abu Dhabi!</h3>
+            <p>Hospedate la cantidad de días que adquieras<br>
+            sólo por <strong>499,9usd</strong> <button class="añadir">Añadir a MiExperiencia</button></p>
+            <div class="acciones-carrito">
+                <button class="pagar">Ir a pagar</button>
+                <button class="vaciar">Vaciar Carrito</button>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="buscador">
+            <select class="select">
+                <option>Cantidad de días</option>
+                <option>3 días</option>
+                <option>5 días</option>
+                <option>7 días</option>
+            </select>
+            <button class="boton-secundario">Fecha<br><span></span></button>
+            <div class="contador">
+                <label>Mayores</label>
+                <div class="input-num">
+                    <button>-</button>
+                        <input type="number" value="1" min="0">
+                    <button>+</button>
+                </div>
+            </div>
+            <div class="contador">
+                <label>Menores</label>
+                <div class="input-num">
+                    <button>-</button>
+                        <input type="number" value="0" min="0">
+                    <button>+</button>
+                </div>
+            </div>
+            <button class="boton-principal">Buscar Precios</button>
+        </div>
+        <div>
+            <video width="1400" height="1100" controls style="display: block; margin: 0 auto;">
+                <source src="img/Video-inicio.mp4" type="video/mp4">
+            </video>
+        </div>
+        <div>
+            <h2>Bienvenido a</h2>
+            <img src="img/Logo Disneyland Azul.png" alt="Logo Disney Abu Dhabi Azul" class="Logo-Disney">
+            <button class="boton">Que comience la magia</button>
+        </div>
+        <div class="contenedor">
+            <div class="contenedor-1">
+                <div class="Oasis-de-los-sueños">
+                    <h2>Oasis de los Sueños</h2>
+                    <img src="img/Oaisis de los sueños.jpg" alt="">
+                </div>
+                <div class="descripcion">
+                    <p> Donde la brisa del desierto acaricia palacios dorados y las alfombras vuelan sin apuro. Explorá este rincón encantado entre palmeras y aguas cristalinas. Entre luces, aromas y aventuras mágicas, cada paso es un suspiro del corazón.</p>
+                </div>
+                <div class="Personaje-1">
+                    <img src="./img/Personaje-Oasis-de-los-suenos.png" alt="">
+                </div>
+            </div>
+            <div class="contenedor-2">
+                <div class="Personaje-2">
+                    <img src="./img/Personaje-Reino-del-manana.png" alt="">
+                </div>
+                <div class="descripcion">
+                    <p>El futuro no es una promesa… es una experiencia en movimiento. Subite a un tren que desafía el tiempo, caminá entre torres brillantes y descubrí que la tecnología también puede emocionar. Acá, la imaginación no tiene límites.</p>
+                </div>
+                <div class="Reino-del-mañana">
+                    <h2>Reino del mañana</h2>
+                    <img src="img/Reino del mañana.jpg" alt="">
+                </div>
+            </div>
+            <div class="contenedor-3">
+                <div class="Tierra-de-leyendas">
+                    <h2>Tierra de leyendas</h2>
+                    <img src="img/Tierra de leyendas.jpg" alt="">
+                </div>
+                <div class="descripcion">
+                    <p>Dragones, castillos, héroes y profecías... pero la historia aún no está escrita.Sumergite en un mundo donde las ruinas esconden secretos, los barcos surcan aguas encantadas, y los valientes encuentran su destino.</p>
+                </div>
+                <div class="Personaje-3">
+                    <img src="./img/Personaje-Tierra-de-leyendas.png" alt="">
+                </div>
+            </div>
+        </div>
+        <div>
+            <h2>Mapa</h2>
+            <img src="img/Logo Disneyland Negro.png" alt="Logo Disneyland Abu Dhabi Negro" class="Logo-Disney">
+        </div>
+        <div class="mapa">
+            <img src="img/Mapa-Disneyland.png" alt="" class="mapa-sitio">
+        </div>
+        <p>Posiciónate en un lugar del mapa y conoce la magia</p>
+        <div class="precios">
+            <div class="tarjeta">
+                <h3>Aventuras de Oasis</h3>
+                <img src="img/oasis-de-los-sueños.png" alt="" class="img">
+                <ul>
+                    <li>Pack 2 días en el parque: Aventuras de Oasis.</li>
+                    <li>Hospedaje de 1 noche en resort: “Dreams in the Clouds”</li>
+                    <li>Show de Fuegos artificiales y Desfile de Personajes Mágicos</li>
+                    <li>Cena con show en vivo. Banda Sonora de la película: Oasis de los Sueños.</li>
+                    <li>Visita guiada al Set de Grabación de la escena: “Alfombras Voladoras.”</li>
+                    <li>Recarga ilimitada de batidos y bebidas.</li>
+                </ul>
+                <h4>$359,99</h4>
+                <button class="boton">Comprar</button>
+            </div>
+            <div class="tarjeta">
+                <h3>TecnoMagia</h3>
+                <img src="img/reino-del-mañana.png" alt="" class="img">
+                <ul>
+                    <li>Pack 2 días en el parque: Reino del Mañana.</li>
+                    <li>Hospedaje de 1 noche en resort: “Dreams in the Clouds”</li>
+                    <li>Show de Fuegos artificiales y Desfile de Personajes Mágicos</li>
+                    <li>Cena con show en vivo. Banda Sonora de la película: Reino del Mañana</li>
+                    <li>Visita guiada al Set de Grabación de la escena: “Constructores de trenes Sónicos.”</li>
+                    <li>Recarga ilimitada de batidos y bebidas.</li>
+                </ul>
+                <h4>$359,99</h4>
+                <button class="boton">Comprar</button>
+            </div>
+            <div class="tarjeta">
+                <h3>Una leyenda serás</h3>
+                <img src="img/tierra-de-leyendas.png" alt="" class="img">
+                <ul>
+                    <li>Pack 2 días en el parque: Tierra de Leyendas.</li>
+                    <li>Hospedaje de 1 noche en resort: “Dreams in the Clouds”</li>
+                    <li>Show de Fuegos artificiales y Desfile de Personajes Mágicos</li>
+                    <li>Cena con show en vivo. Banda Sonora de la película: Tierra de Leyendas</li>
+                    <li>Visita guiada al Set de Grabación de la escena: “Tesoros de las leyendas.”</li>
+                    <li>Recarga ilimitada de batidos y bebidas.</li>
+                </ul>
+                <h4>$359,99</h4>
+                <button class="boton">Comprar</button>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>Trabajo grupal - Materia Diseño y Desarrollo Web - Curso 15130 - Grupo 4</p>
+        <p><a href="https://zoenereavicente.github.io/Desarrollo-web-TP-Grupal-Avances/" style="text-decoration: none;">Sitio del grupo</a></p>
+        <ul>
+            <h3>Integrantes</h3>
+            <li>Kidyba, Lautaro Agustin</li>
+            <li>Marquez Marcoguiseppe, Santino Isaac</li>
+            <li>Pellegrini, Francesco</li>
+            <li>Rodriguez, Joaquin</li>
+            <li>Vicente, Zoe Nerea</li>
+        </ul>
+        <img src="img/Logo_UADE.svg" alt="Logo UADE">
+    </footer>
+    <script src="index.js"></script>
+</body>
+</html>

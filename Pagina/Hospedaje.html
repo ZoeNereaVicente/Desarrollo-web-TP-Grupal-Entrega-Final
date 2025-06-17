@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hospedaje mágico - Disneyland Abu Dhabi</title>
+    <link rel="stylesheet" href="css/Hospedaje.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+        <img src="img/Logo Disneyland Blanco.png" alt="Logo Disney Abu Dhabi Blanco" class="Logo">
+        <!--Navbar Computadora-->
+        <nav class="desktop-menu">
+            <ul>
+                <li><a href="index.html"style="text-decoration: none;" >Home</a></li>
+                <li><a href="Tickets.html"style="text-decoration: none;">Tickets</a></li>
+                <li><a href="Parque.html"style="text-decoration: none;">Conocé el parque</a></li>
+                <li><a href="Hospedaje.html"style="text-decoration: none;">Hospedaje mágico</a></li>
+                <li><a href="Reglas.html"style="text-decoration: none;">Reglas</a></li>
+            </ul>
+       </nav>
+        <button class="menu-toggle">
+            <i class="fas fa-bars"></i>
+        </button>
+        <!--Navbar Celular-->
+        <nav class="mobile-menu">
+            <ul>
+                <li><a href="index.html"style="text-decoration: none;">Home</a></li>
+                <li><a href="Tickets.html"style="text-decoration: none;">Tickets</a></li>
+                <li><a href="Parque.html"style="text-decoration: none;">Conocé el parque</a></li>
+                <li><a href="Hospedaje.html"style="text-decoration: none;">Hospedaje mágico</a></li>
+                <li><a href="Reglas.html"style="text-decoration: none;">Reglas</a></li>
+            </ul>
+        </nav>
+        <button class="carrito-toggle" onclick="toggleCarrito()">
+            <img src="./img/lampara-genio.png" alt="Carrito" style="width: 40px; height: 30px;">
+        </button>
+        <div id="carrito-panel" class="carrito-panel oculto">
+            <h2>¡Tu experiencia está llena de magia!</h2>
+            <p class="carrito">Actualmente llevás:</p>
+            <ul>
+                <li>x2 - Un mundo Ideal.</li>
+                <li>x1 - Experiencia Tecnomagia</li>
+            </ul>
+            <hr>
+            <h3>¡Duerme en Disney Abu Dhabi!</h3>
+            <p>Hospedate la cantidad de días que adquieras<br>
+            sólo por <strong>499,9usd</strong> <button class="añadir">Añadir a MiExperiencia</button></p>
+            <div class="acciones-carrito">
+                <button class="pagar">Ir a pagar</button>
+                <button class="vaciar">Vaciar Carrito</button>
+            </div>
+        </div>
+    </header>
+    <main>
+        <h1>Noches mágicas en</h1>
+        <img src="img/Logo Disneyland Negro.png" alt="Logo Disneyland Abu Dhabi Negro" class="Logo-Disney">
+        <div class="Hotel-1">
+            <img src="img/Foto hotel 1.jpg" alt="Foto hotel">
+        </div>
+        <div class="Hotel-2">
+            <img src="img/Foto hotel 2.jpg" alt="Foto hotel">
+        </div>
+        <div class="Suites">
+            <img src="img/The Walt Disney Suite.png" alt="The walt disney suite" class="disney-suite">
+            <h2>✨ Descansa donde comienzan los sueños ✨</h2>
+            <p>Despertá con vistas mágicas, viví cenas con espectáculos inolvidables y sentí que cada rincón fue creado para tu historia.</p>
+            <p>Tu nube te espera en Dream in the Clouds. 🌙🗝️</p>
+        </div>
+        <div class="Hotel-3">
+            <img src="img/Foto hotel 3.jpg" alt="Foto hotel">
+        </div>
+        <div class="Hotel-4">
+            <img src="img/Foto hotel 4.jpg" alt="Foto hotel">
+            <img src="img/Foto hotel 5.jpg" alt="Foto hotel">
+        </div>
+    </main>
+    <footer>
+        <p>Trabajo grupal - Materia Diseño y Desarrollo Web - Curso 15130 - Grupo 4</p>
+        <p><a href="https://zoenereavicente.github.io/Desarrollo-web-TP-Grupal-Avances/" style="text-decoration: none;">Sitio del grupo</a></p>
+        <ul>
+            <h3>Integrantes</h3>
+            <li>Kidyba, Lautaro Agustin</li>
+            <li>Marquez Marcoguiseppe, Santino Isaac</li>
+            <li>Pellegrini, Francesco</li>
+            <li>Rodriguez, Joaquin</li>
+            <li>Vicente, Zoe Nerea</li>
+        </ul>
+        <img src="img/Logo_UADE.svg" alt="Logo UADE">
+    </footer>
+    <script src="index.js"></script>
+</body>
+</html>

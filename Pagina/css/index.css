@@ -1,0 +1,416 @@
+p{
+  text-align: center;
+  padding: 1px;
+}
+
+h2{
+  text-align: center;
+}
+
+/*DIV - CONTENEDOR*/
+.contenedor {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+div > div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 60px; 
+  margin-bottom: 10px;
+}
+
+/*DIV-CONTENEDORES-1/2/3*/
+.contenedor-1,
+.contenedor-3{
+  background-color: #D13B1540;
+}
+
+.contenedor-2{
+  background-color: #06507640;
+}
+
+.contenedor-1,
+.contenedor-2,
+.contenedor-3 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  padding: 20px;
+  width: 100%;
+}
+
+.contenedor-1 .descripcion,
+.contenedor-2 .descripcion,
+.contenedor-3 .descripcion {
+  max-width: 700px;
+  text-align: center;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+/*DIVS-INTERIORES*/
+
+.Oasis-de-los-sueños,
+.Reino-del-mañana,
+.Tierra-de-leyendas {
+  position: relative;
+}
+
+.Oasis-de-los-sueños h2,
+.Reino-del-mañana h2,
+.Tierra-de-leyendas h2 {
+  position: absolute;
+  top: 130px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: rgba(255, 255, 255, 0.349);
+  color: white;
+  padding: 5px 10px;
+  font-size: 18px;
+  width: 95%;
+  text-align: center;
+}
+
+.Oasis-de-los-sueños img,
+.Reino-del-mañana img,
+.Tierra-de-leyendas img {
+  max-width: 800px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+/*PERSONAJES*/
+.Personaje-1,
+.Personaje-2,
+.Personaje-3 {
+  width: 200px;
+}
+
+.Personaje-1 img,
+.Personaje-2 img,
+.Personaje-3 img {
+  width: 100%;
+  height: auto;
+  scale: 1.5;
+}
+
+
+/*BOTON*/
+.boton {
+  background-color: #0077a5;
+  color: white; 
+  font-size: 15px;
+  font-weight: bold; 
+  padding: 15px 30px; 
+  border: none; 
+  border-radius: 20px; 
+  cursor: pointer;
+  text-align: center; 
+  display: block;    
+  margin: 30px auto;
+}
+
+.boton:hover {
+  background-color: #00357B;
+}
+
+/*MAPA*/
+.mapa {
+  width: 1000px;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  overflow: hidden;
+  padding: 30px;
+}
+
+.mapa img {
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
+  display: block;
+  border-radius: 10px;
+}
+
+/*LOGO*/
+.Logo-Disney{
+  transform: scale(2);
+  display: block;
+  margin: auto;
+  padding: 10px;
+}
+
+/*DIV-PRECIOS*/
+.precios {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  padding: 1px 1px;
+  flex-wrap: wrap;
+}
+
+.precios > div {
+  margin: 0;
+}
+
+/*DIV-TARJETA*/
+.tarjeta {
+  background-color: #f0f0f0;
+  padding: 30px;
+  border-radius: 15px;
+  width: 350px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.tarjeta h4{
+  padding: 0;
+  margin: 0;
+}
+
+.tarjeta h3 {
+  text-align: center;
+  margin-bottom: 1px;
+  font-size: 25px;
+  margin-top: 5px;
+  order: -1;
+}
+
+.tarjeta .img {
+  order: 0;
+  scale: 1.5;
+}
+
+.tarjeta h2{
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.tarjeta ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.tarjeta li {
+  margin-bottom: 10px;
+  line-height: 1.4;
+}
+
+/*DIV-BUSCADOR*/
+
+.contenedor-buscador {
+  position: relative;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.buscador {
+  background-color: #dcdcdc;
+  padding: 6px 10px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+  font-family: sans-serif;
+  max-height: 300px;
+  overflow: hidden;
+  transition: max-height 0.4s ease;
+}
+
+.buscador.oculto {
+  max-height: 0;
+  padding: 0 10px;
+}
+
+.toggle-boton {
+  position: absolute;
+  top: -12px;
+  right: 20px;
+  background: none;
+  border: none;
+  font-size: 18px;
+  cursor: pointer;
+  color: #555;
+  transform: rotate(0deg);
+  transition: transform 0.3s ease;
+}
+
+.toggle-boton.abierto {
+  transform: rotate(180deg);
+}
+
+.select,
+.boton-secundario,
+.boton-principal,
+.input-num input {
+  font-size: 13px;
+  padding: 4px 8px;
+  border: none;
+  border-radius: 6px;
+  background-color: #c4c4c4;
+  height: 30px;
+}
+
+.boton-secundario span {
+  font-size: 12px;
+  color: #444;
+}
+
+.boton-principal {
+  background-color: #00c000;
+  color: white;
+  padding: 5px 12px;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 8px;
+}
+
+.contador {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2px;
+}
+
+.contador label {
+  font-size: 12px;
+  margin: 0;
+}
+
+.input-num {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.input-num button {
+  background: none;
+  border: none;
+  font-size: 18px;
+  cursor: pointer;
+  color: rebeccapurple;
+}
+
+.input-num input {
+  width: 28px;
+  height: 24px;
+  text-align: center;
+  background-color: #eee;
+  border-radius: 4px;
+}
+
+/*MAIN*/
+main{
+  padding: 1px;
+}
+
+/*VIDEO*/
+video {
+  margin-top: 10px !important;
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+@media (max-width: 768px) {
+  /*VIDEO*/
+  video {
+    width: 100%;
+    height: auto;
+  }
+
+  .menu-open video{
+    transform: translateY(25px);
+  }
+
+  /*MAPA*/
+  .mapa {
+    width: 100%;
+    padding: 10px;
+  }
+
+  .mapa img {
+    width: 100%;
+    height: auto;
+  }
+  /*DIV-PRECIOS*/
+  .precios {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .tarjeta {
+    width: 90%;
+  }
+
+  /*DIV-BUSCADOR*/
+  .buscador {
+    gap: 5px;
+  }
+
+  .select,
+  .fecha,
+  .boton-principal,
+  .input-num {
+    font-size: 8px;
+    height: 20px;
+    padding: 4px;
+  }
+
+  .input-num input.contador {
+    width: 20px;
+  }
+
+  .menu-open .buscador{
+    transform: translateY(20px);
+  }
+
+  /*DIV-CONTENEDOR*/
+  .contenedor-1,
+  .contenedor-2,
+  .contenedor-3 {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .Oasis-de-los-sueños,
+  .Reino-del-mañana,
+  .Tierra-de-leyendas {
+    order: 1;
+  }
+
+  .Oasis-de-los-sueños img,
+  .Reino-del-mañana img,
+  .Tierra-de-leyendas img {
+    max-width: 650px;
+    height: 250px;
+  }
+
+  .descripcion {
+    order: 2;
+    margin-top: 20px;
+    padding: 0 10px;
+  }
+
+  .Personaje-1,
+  .Personaje-2,
+  .Personaje-3 {
+    order: 3;
+    margin-top: 10px;
+  }
+}

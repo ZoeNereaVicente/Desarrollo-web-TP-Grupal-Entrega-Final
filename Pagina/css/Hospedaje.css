@@ -1,0 +1,102 @@
+/*LOGO*/
+.Logo-Disney{
+    transform: scale(2);
+    display: block;
+    margin: auto;
+    padding: 20px;
+}
+
+/*DIV-HOTEL (FOTOS DEL HOTEL)*/
+.Hotel-1 img {
+    width: 100%;
+    max-width: 800px; 
+    height: auto; 
+    display: block;
+    margin: auto;
+    padding: 30px;
+    border-radius: 5%;
+}
+
+.Hotel-2 img {
+    width: 100%;
+    max-width: 800px; 
+    height: auto; 
+    display: block;
+    margin: auto;
+    padding: 20px;
+    border-radius: 5%;
+}
+
+.Hotel-3 img {
+    width: 100%;
+    max-width: 800px; 
+    height: auto; 
+    display: block;
+    margin: auto;
+    padding: 20px;
+    border-radius: 5%;
+}
+
+
+.Hotel-4 img {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    padding: 10px;
+    border-radius: 5%;
+}
+
+.Hotel-4 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+/*DIV-SUITES*/
+.Suites{
+    text-align: center;
+    margin: 20px;
+    padding: 20px;
+
+    h2{
+        padding: 25px;
+    }
+}
+
+.disney-suite{
+    transform: scale(4);
+    display: block;
+    margin: auto;
+    padding: 10px;
+}
+
+@media screen and (max-width: 600px) {
+    /*LOGO*/
+    .Logo-Disney {
+        transform: scale(1.2); 
+        padding: 10px;
+    }
+
+    /*DIV-HOTEL (FOTOS DEL HOTEL)*/
+    .Hotel-1 img,
+    .Hotel-2 img,
+    .Hotel-3 img,
+    .Hotel-4 img,
+    .disney-suite {
+        max-width: 95%; 
+        padding: 10px;   
+        transform: scale(1);
+    }
+
+    .Hotel-4 {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    /*DIV-SUITES*/
+    .Suites {
+        margin: 10px;
+        padding: 10px;
+    }
+}

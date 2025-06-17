@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tickets - Disneyland Abu Dhabi</title>
+    <link rel="stylesheet" href="css/Tickets.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+        <img src="img/Logo Disneyland Blanco.png" alt="Logo Disney Abu Dhabi Blanco" class="Logo">
+        <!--Navbar Computadora-->
+        <nav class="desktop-menu">
+            <ul>
+                <li><a href="index.html"style="text-decoration: none;" >Home</a></li>
+                <li><a href="Tickets.html"style="text-decoration: none;">Tickets</a></li>
+                <li><a href="Parque.html"style="text-decoration: none;">Conocé el parque</a></li>
+                <li><a href="Hospedaje.html"style="text-decoration: none;">Hospedaje mágico</a></li>
+                <li><a href="Reglas.html"style="text-decoration: none;">Reglas</a></li>
+            </ul>
+       </nav>
+        <button class="menu-toggle">
+            <i class="fas fa-bars"></i>
+        </button>
+        <!--Navbar Celular-->
+        <nav class="mobile-menu">
+            <ul>
+                <li><a href="index.html"style="text-decoration: none;">Home</a></li>
+                <li><a href="Tickets.html"style="text-decoration: none;">Tickets</a></li>
+                <li><a href="Parque.html"style="text-decoration: none;">Conocé el parque</a></li>
+                <li><a href="Hospedaje.html"style="text-decoration: none;">Hospedaje mágico</a></li>
+                <li><a href="Reglas.html"style="text-decoration: none;">Reglas</a></li>
+            </ul>
+        </nav>
+        <button class="carrito-toggle" onclick="toggleCarrito()">
+            <img src="./img/lampara-genio.png" alt="Carrito" style="width: 40px; height: 30px;">
+        </button>
+        <div id="carrito-panel" class="carrito-panel oculto">
+            <h2>¡Tu experiencia está llena de magia!</h2>
+            <p class="carrito">Actualmente llevás:</p>
+            <ul>
+                <li>x2 - Un mundo Ideal.</li>
+                <li>x1 - Experiencia Tecnomagia</li>
+            </ul>
+            <hr>
+            <h3>¡Duerme en Disney Abu Dhabi!</h3>
+            <p>Hospedate la cantidad de días que adquieras<br>
+            sólo por <strong>499,9usd</strong> <button class="añadir">Añadir a MiExperiencia</button></p>
+            <div class="acciones-carrito">
+                <button class="pagar">Ir a pagar</button>
+                <button class="vaciar">Vaciar Carrito</button>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="contenedor-tickets">
+        <div class="izquierda">
+            <div class="item-ticket">
+                <div class="foto">
+                    <img src="img/Elige la magia de tu destino.png" alt="Foto ticket">
+                </div>
+                <div class="tickets">
+                    <h2>Elige la magia de tu destino</h2>
+                    <p>1 parque a elección.</p>
+                    <p>Mayores de 10 años desde</p>
+                    <h3>$119.00usd</h3>
+                    <p>Por un ticket de 1 día, antes de impuestos.</p>
+                    <p>Los precios se cobran en dólares estadounidenses.</p>
+                    <button class="boton">Seleccionar Tickets</button>
+                </div>
+            </div>
+            <div class="item-ticket">
+                <div class="foto">
+                    <img src="img/Un mundo ideal.png" alt="Foto ticket">
+                </div>
+                <div class="tickets">
+                    <h2>Un mundo ideal</h2>
+                    <p>Acceso libre a todos los parques.</p>
+                    <p>Mayores de 10 años desde</p>
+                    <h3>$350.00usd</h3>
+                    <p>Por un ticket de 3 días, antes de impuestos.</p>
+                    <p>Los precios se cobran en dólares estadounidenses.</p>
+                    <button class="boton">Seleccionar Tickets</button>
+                </div>
+            </div>
+        </div>
+        <div class="derecha">
+            <div>
+                <img src="img/Cancelación tickets.png" alt="Foto ticket">
+            </div>
+            <div class="cancelacion-tickets">
+                <h2>La magia estará esperando...</h2>
+                <h3>¿Necesitas cancelar los tickets?</h3>
+                <p>Si la compra se hizo en, o antes de 15 días, visitá MisActividades para realizar la cancelación.</p>
+                <button class="boton">Ir a Mis Actividades</button>
+            </div>
+        </div>
+      </div>
+    </main>
+    <footer>
+        <p>Trabajo grupal - Materia Diseño y Desarrollo Web - Curso 15130 - Grupo 4</p>
+        <p><a href="https://zoenereavicente.github.io/Desarrollo-web-TP-Grupal-Avances/" style="text-decoration: none;" >Sitio del grupo</a></p>
+        <ul>
+            <h3>Integrantes</h3>
+            <li>Kidyba, Lautaro Agustin</li>
+            <li>Marquez Marcoguiseppe, Santino Isaac</li>
+            <li>Pellegrini, Francesco</li>
+            <li>Rodriguez, Joaquin</li>
+            <li>Vicente, Zoe Nerea</li>
+        </ul>
+        <img src="img/Logo_UADE.svg" alt="Logo UADE">
+    </footer>
+    <script src="index.js"></script>
+</body>
+</html>

@@ -1,0 +1,130 @@
+/*LOGO*/
+.Logo-Disney {
+  height: 1em;
+  width: auto;
+  vertical-align: middle;
+  display: inline;
+  margin: 0 1px 10px;
+  transform: scaleX(1.1);
+}
+
+/*DIV-OASIS DE LOS SUEÑOS*/
+.Oasis-de-los-sueños{
+  background-image: url('../img/Oaisis\ de\ los\ sueños.jpg');
+  width: 100%;
+  height: 1000px;
+  background-size: cover;
+  background-position: center;
+}
+
+/*DIV-REINO DEL MAÑANA*/
+.Reino-del-mañana{
+  background-image: url('../img/Reino\ del\ mañana.jpg');
+  width: 100%;
+  height: 1000px;
+  background-size: cover;
+  background-position: center;
+}
+
+/*DIV-TIERRA DE LEYENDAS*/
+.Tierra-de-leyendas{
+  background-image: url('../img/Tierra\ de\ leyendas.jpg');
+  width: 100%;
+  height: 1000px;
+  background-size: cover;
+  background-position: center;
+}
+
+/*CONTENDOR DERECHA*/
+.contenedor-d {
+  background-color: rgba(255, 255, 255, 0.411);
+  padding: 30px;
+  width: 35%;
+  height: 100%;
+  margin-left: auto;
+  line-height: 1.6;
+
+  h2{
+    color:#0077A5;
+    margin-top: 0;
+    margin-bottom: 300px;
+    text-align: center;
+    padding: 10px;
+  }
+
+  p{
+    margin-bottom: 50px;
+  }
+
+  li{
+    font-weight: bold;
+  }
+}
+
+/*CONTENDOR IZQUIERDA*/
+.contenedor-i {
+  background-color: rgba(255, 255, 255, 0.411);
+  padding: 30px;
+  width: 35%;
+  height: 100%;
+  margin-right: auto;
+  line-height: 1.6;
+
+  h2{
+    color: #007A33;
+    margin-top: 0;
+    margin-bottom: 300px;
+    text-align: center;
+    padding: 10px;
+  }
+
+  p{
+    margin-bottom: 50px;
+  }
+
+  li{
+    font-weight: bold;
+  }
+}
+
+@media (max-width: 768px) {
+  h1 {
+    margin-bottom: 30px;
+  }
+  
+  .menu-open h1 {
+    margin-top: 50px;
+  }
+  
+  /*DIVS-PARQUES*/
+  .Oasis-de-los-sueños,
+  .Reino-del-mañana,
+  .Tierra-de-leyendas {
+    height: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    width: 100%;
+  }
+
+  /*CONTENEDORES DERECHA-IZQUIERDA*/
+  .contenedor-d,
+  .contenedor-i {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    background-color: rgba(255, 255, 255, 0.319);
+    padding: 10px;
+  }
+
+  .contenedor-d h2,
+  .contenedor-i h2 {
+    margin-bottom: 1px;
+  }
+
+  .contenedor-d p,
+  .contenedor-i p {
+    margin-bottom: 10px;
+  }
+}

@@ -1,0 +1,166 @@
+/*BOTON*/
+.boton {
+    background-color: #0077a5;
+    color: white; 
+    font-size: 15px;
+    font-weight: bold; 
+    padding: 15px 30px; 
+    border: none; 
+    border-radius: 20px; 
+    cursor: pointer;
+    text-align: center; 
+    display: block;    
+    margin: 30px auto;
+}
+
+.boton:hover {
+    background-color: #00357B;
+}
+
+.cancelacion-tickets .boton {
+    width: fit-content; 
+    margin: 20px auto;
+}
+
+/*MAIN*/
+main {
+    padding: 40px;
+}
+
+/*DIV-TICKETS*/
+.contenedor-tickets {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.tickets {
+    margin-bottom: 40px;
+}
+
+.foto img {
+   max-width: 300px;
+   display: block;
+   margin-bottom: 10px;
+}
+
+.izquierda, .derecha {
+    flex: 1;
+}
+
+.izquierda {
+    padding-right: 20px;
+    border-right: 2px solid black;
+}
+
+.izquierda .foto img {
+    margin-left: 0;   
+}
+
+.derecha {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    flex-direction: row-reverse;
+}
+
+.derecha > div:first-child img {
+    width: 400px;
+    height: auto;
+    display: block;
+}
+
+.derecha img {
+    margin-left: auto; 
+    margin-right: 0;
+    display: block;
+    max-width: 350px;
+    margin-bottom: 20px;
+}
+
+.item-ticket {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 40px;
+}
+
+.item-ticket .foto img {
+    width: 400px;
+    height: auto;
+    margin: 0;
+}
+
+.item-ticket .tickets {
+    flex: 1;
+}
+
+.cancelacion-tickets {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cancelacion-tickets h2,
+.cancelacion-tickets h3,
+.cancelacion-tickets p,
+.cancelacion-tickets .boton {
+    text-align: left;
+    margin: 0 0 10px 0;
+}
+
+@media (max-width: 768px) {
+    /*DIV-TICKETS*/
+    .derecha {
+        flex-direction: column;
+        align-items: center;
+        padding-left: 0;
+        max-width: 100%;
+    }
+
+    .derecha > div:first-child img {
+        width: 100%;
+        max-width: 100%;
+        margin: 0 auto 20px auto;
+    }
+
+    .izquierda {
+        border-right: none;
+        padding-right: 0;
+        border-bottom: 2px solid black;
+        padding-bottom: 20px;
+        margin-bottom: 20px;
+    }
+    
+    .cancelacion-tickets {
+        text-align: center;
+        width: 100%;
+    }
+
+    .cancelacion-tickets h2,
+    .cancelacion-tickets h3,
+    .cancelacion-tickets p,
+    .cancelacion-tickets .boton {
+        text-align: center;
+    }
+
+    .contenedor-tickets {
+        flex-direction: column;
+    }
+
+    .item-ticket {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .item-ticket .foto img {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    /*BOTON*/
+    .boton {
+        margin: 20px auto;
+    }
+}

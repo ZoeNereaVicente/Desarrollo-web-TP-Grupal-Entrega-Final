@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conocé el parque - Disneyland Abu Dhabi</title>
+    <link rel="stylesheet" href="css/Parque.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+   <header>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+        <img src="img/Logo Disneyland Blanco.png" alt="Logo Disney Abu Dhabi Blanco" class="Logo">
+        <!--Navbar Computadora-->
+        <nav class="desktop-menu">
+            <ul>
+                <li><a href="index.html"style="text-decoration: none;" >Home</a></li>
+                <li><a href="Tickets.html"style="text-decoration: none;">Tickets</a></li>
+                <li><a href="Parque.html"style="text-decoration: none;">Conocé el parque</a></li>
+                <li><a href="Hospedaje.html"style="text-decoration: none;">Hospedaje mágico</a></li>
+                <li><a href="Reglas.html"style="text-decoration: none;">Reglas</a></li>
+            </ul>
+       </nav>
+        <button class="menu-toggle">
+            <i class="fas fa-bars"></i>
+        </button>
+        <!--Navbar Celular-->
+        <nav class="mobile-menu">
+            <ul>
+                <li><a href="index.html"style="text-decoration: none;">Home</a></li>
+                <li><a href="Tickets.html"style="text-decoration: none;">Tickets</a></li>
+                <li><a href="Parque.html"style="text-decoration: none;">Conocé el parque</a></li>
+                <li><a href="Hospedaje.html"style="text-decoration: none;">Hospedaje mágico</a></li>
+                <li><a href="Reglas.html"style="text-decoration: none;">Reglas</a></li>
+            </ul>
+        </nav>
+        <button class="carrito-toggle" onclick="toggleCarrito()">
+            <img src="./img/lampara-genio.png" alt="Carrito" style="width: 40px; height: 30px;">
+        </button>
+        <div id="carrito-panel" class="carrito-panel oculto">
+            <h2>¡Tu experiencia está llena de magia!</h2>
+            <p class="carrito">Actualmente llevás:</p>
+            <ul>
+                <li>x2 - Un mundo Ideal.</li>
+                <li>x1 - Experiencia Tecnomagia</li>
+            </ul>
+            <hr>
+            <h3>¡Duerme en Disney Abu Dhabi!</h3>
+            <p>Hospedate la cantidad de días que adquieras<br>
+            sólo por <strong>499,9usd</strong> <button class="añadir">Añadir a MiExperiencia</button></p>
+            <div class="acciones-carrito">
+                <button class="pagar">Ir a pagar</button>
+                <button class="vaciar">Vaciar Carrito</button>
+            </div>
+        </div>
+    </header>
+    <main>
+        <h1>La magia de <img src="img/Logo Disneyland Negro.png" alt="Logo Disneyland Abu Dhabi Negro" class="Logo-Disney"> la encuentras en estos 3 parques temáticos</h1>
+        <div class="Oasis-de-los-sueños">
+            <div class="contenedor-d">
+                <h2>Oasis de los Sueños</h2>
+                <p>Inspirado en los  Clásicos de Disney ambientados en desiertos, palacios y mercados orientales (como Aladdín). El Oasis de los Sueños invita disfrutar de sus atracciones más destacadas:</p>
+                <ul>
+                    <li>Paseo en alfombra voladora con simulador inmersivo.</li>
+                    <li>Mercado mágico interactivo con arte árabe y tecnología holográfica.</li>
+                    <li>Espectáculo nocturno sobre agua con luces, danzas y fuego.</li>
+                </ul>
+            </div>
+        </div>
+        <div class="Reino-del-mañana">
+            <div class="contenedor-i">
+                <h2>Reino del Mañana</h2>
+                <p>Inspirado en la proyección futurista de Abu Dhabi, te embarcarás en una aventura estilo Tony Stark, donde podrás vivir una experiencia unica con:</p>
+                <ul>
+                    <li>Parque de realidad aumentada con experiencias IA en vivo.</li>
+                    <li>Tren hiperveloz entre estaciones de mundos Disney futuristas.</li>
+                    <li>Torre de observación interactiva con vista de todo el parque.</li>
+                </ul>
+            </div>
+        </div>
+        <div class="Tierra-de-leyendas">
+            <div class="contenedor-d">
+                <h2>Tierra de Leyendas</h2>
+                <p>Basado en la mitología regional de Abu Dhabi, sus aventuras y cuentos mágicos, vivirás experiencias como:</p>
+                <ul>
+                    <li>Safari animatrónico con criaturas mitológicas y personajes Disney.</li>
+                    <li>Show de marionetas gigantes y hologramas contando leyendas árabes.</li>
+                    <li>Laberinto de las arenas: recorrido entre ruinas encantadas.</li>
+                </ul>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>Trabajo grupal - Materia Diseño y Desarrollo Web - Curso 15130 - Grupo 4</p>
+        <p><a href="https://zoenereavicente.github.io/Desarrollo-web-TP-Grupal-Avances/" style="text-decoration: none;" >Sitio del grupo</a></p>
+        <ul>
+            <h3>Integrantes</h3>
+            <li>Kidyba, Lautaro Agustin</li>
+            <li>Marquez Marcoguiseppe, Santino Isaac</li>
+            <li>Pellegrini, Francesco</li>
+            <li>Rodriguez, Joaquin</li>
+            <li>Vicente, Zoe Nerea</li>
+        </ul>
+        <img src="img/Logo_UADE.svg" alt="Logo UADE">
+    </footer>
+    <script src="index.js"></script>
+</body>
+</html>

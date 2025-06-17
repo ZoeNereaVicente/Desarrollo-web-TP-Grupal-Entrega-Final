@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reglas - Disneyland Abu Dhabi</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/Reglas.css">
+</head>
+<body>
+    <header>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+        <img src="img/Logo Disneyland Blanco.png" alt="Logo Disney Abu Dhabi Blanco" class="Logo">
+        <!--Navbar Computadora-->
+        <nav class="desktop-menu">
+            <ul>
+                <li><a href="index.html"style="text-decoration: none;" >Home</a></li>
+                <li><a href="Tickets.html"style="text-decoration: none;">Tickets</a></li>
+                <li><a href="Parque.html"style="text-decoration: none;">Conocé el parque</a></li>
+                <li><a href="Hospedaje.html"style="text-decoration: none;">Hospedaje mágico</a></li>
+                <li><a href="Reglas.html"style="text-decoration: none;">Reglas</a></li>
+            </ul>
+       </nav>
+        <button class="menu-toggle">
+            <i class="fas fa-bars"></i>
+        </button>
+        <!--Navbar Celular-->
+        <nav class="mobile-menu">
+            <ul>
+                <li><a href="index.html"style="text-decoration: none;">Home</a></li>
+                <li><a href="Tickets.html"style="text-decoration: none;">Tickets</a></li>
+                <li><a href="Parque.html"style="text-decoration: none;">Conocé el parque</a></li>
+                <li><a href="Hospedaje.html"style="text-decoration: none;">Hospedaje mágico</a></li>
+                <li><a href="Reglas.html"style="text-decoration: none;">Reglas</a></li>
+            </ul>
+        </nav>
+        <button class="carrito-toggle" onclick="toggleCarrito()">
+            <img src="./img/lampara-genio.png" alt="Carrito" style="width: 40px; height: 30px;">
+        </button>
+        <div id="carrito-panel" class="carrito-panel oculto">
+            <h2>¡Tu experiencia está llena de magia!</h2>
+            <p class="carrito">Actualmente llevás:</p>
+            <ul>
+                <li>x2 - Un mundo Ideal.</li>
+                <li>x1 - Experiencia Tecnomagia</li>
+            </ul>
+            <hr>
+            <h3>¡Duerme en Disney Abu Dhabi!</h3>
+            <p>Hospedate la cantidad de días que adquieras<br>
+            sólo por <strong>499,9usd</strong> <button class="añadir">Añadir a MiExperiencia</button></p>
+            <div class="acciones-carrito">
+                <button class="pagar">Ir a pagar</button>
+                <button class="vaciar">Vaciar Carrito</button>
+            </div>
+        </div>
+    </header>
+    <main>
+        <h1>Reglas Mágicas</h1>
+        <img src="img/Logo Disneyland Negro.png" alt="Logo Disney Abu Dhabi Negro" class="Logo-Disney">
+        <div class="Principios">
+            <div class="circle">
+               <h3>Principio Disney</h3>
+               <p>Amor</p>
+               <p>1</p>
+            </div>
+            <div class="circle">
+               <h3>Principio Disney</h3>
+               <p>Familia</p>
+               <p>2</p>
+            </div>
+            <div class="circle">
+               <h3>Principio Disney</h3>
+               <p>Magia</p>
+               <p>3</p>
+            </div>
+        </div>
+        <div class="Reglas">
+            <ul>
+                <li>1. La magia comienza con vos: tu sonrisa puede ser el inicio del mejor día para alguien más.</li>
+                <li>2. Cada familia es un mundo: respetá, cuidá y celebrá la diversidad de quienes comparten esta aventura.</li>
+                <li>3. El amor guía cada paso: tratamos a todos con amabilidad, como si fueran parte de nuestra historia.</li>
+                <li>4. Los recuerdos se crean juntos: Viví cada momento en compañía, sin distracciones tecnológicas innecesarias.</li>
+                <li>5. La limpieza también es magia: conservá limpio el parque para que cada rincón brille como el primero.</li>
+                <li>6. La paciencia es parte del encanto: las filas, los turnos y los espacios compartidos son parte de la experiencia mágica. Vivilos con respeto.</li>
+                <li>7. Los sueños se cuidan: no está permitido correr, empujar ni realizar acciones que puedan romper la ilusión de otros.</li>
+                <li>8. Los personajes también sienten: respetá y seguí las indicaciones del personal, ellos también son guardianes de la magia.</li>
+                <li>9. Cada rincón es un escenario: hablá con respeto, caminá con alegría, y viví como si estuvieras dentro de un cuento.</li>
+                <li>10. El verdadero pase mágico es tu corazón: si venís con amor, volvés con recuerdos eternos.</li>
+            </ul>
+        </div>
+    </main>
+    <footer>
+        <p>Trabajo grupal - Materia Diseño y Desarrollo Web - Curso 15130 - Grupo 4</p>
+        <p><a href="https://zoenereavicente.github.io/Desarrollo-web-TP-Grupal-Avances/" style="text-decoration: none;">Sitio del grupo</a></p>
+        <ul>
+            <h3>Integrantes</h3>
+            <li>Kidyba, Lautaro Agustin</li>
+            <li>Marquez Marcoguiseppe, Santino Isaac</li>
+            <li>Pellegrini, Francesco</li>
+            <li>Rodriguez, Joaquin</li>
+            <li>Vicente, Zoe Nerea</li>
+        </ul>
+        <img src="img/Logo_UADE.svg" alt="Logo UADE">
+    </footer>
+    <script src="index.js"></script>
+</body>
+</html>
