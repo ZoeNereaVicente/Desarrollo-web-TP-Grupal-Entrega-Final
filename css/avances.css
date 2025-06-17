@@ -1,0 +1,138 @@
+/*MAIN*/
+main{
+    text-align: center;
+    justify-content: center;
+    align-items: center;       
+    box-sizing: border-box;
+}
+
+/*DIV-CONTENEDORES*/
+.contenedores{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1px; 
+    padding: 10px;
+}
+
+/*DIV-CONTENEDORES 1/2/3/4/5*/
+.contenedor1,
+.contenedor2,
+.contenedor3,
+.contenedor4,
+.contenedor5 {
+    width: 100%;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+}
+
+.contenedor1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contenedor5 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.contenedor5 img {
+    width: 100%;
+    max-width: 900px;
+    height: auto;
+    order: 1;
+}
+
+/*PALETA DE COLORES*/
+#color1{
+    background-color: #0077a5;
+}
+
+#color2{
+    background-color: #0047ab;
+}
+
+#color3{
+    background-color: #5DE0E6;
+    color: black;
+    text-shadow: none;
+}
+
+#color4{
+    background-color: #007A33;
+    color: black;
+    text-shadow: none;
+}
+
+#color5{
+    background-color: #ffffff;
+    color: black;
+    text-shadow: none;
+}
+
+/**/
+.paleta{
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    gap: 10px;
+}
+
+.color{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    width: 100px;
+    margin: 1px 0;
+    border-radius: 15px;
+    border: 2px solid black;
+    color: white;
+    font-weight: bold;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.3);
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.4);
+}
+
+#propuesta{
+    width: 50%;
+    box-sizing: border-box;
+    padding: 20px;
+
+    .publico-objetivo{
+        p{
+            font-weight: bold;
+        }
+    }
+}
+
+#equipo{
+    h3{
+        font-size: 18px; 
+        font-weight: bold;
+    }
+}
+
+@media (max-width: 768px) {
+  #propuesta {
+    width: 100%;            
+    padding: 15px 10px; 
+  }
+
+  #propuesta h2 {
+    font-size: 20px;
+  }
+
+  #propuesta p,
+  #propuesta li {
+    font-size: 15px;
+    margin-bottom: 20px;
+    line-height: 1.9;
+  }
+
+  #propuesta ul {
+    padding-left: 20px;
+  }
+}

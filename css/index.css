@@ -1,0 +1,68 @@
+.contenedor{
+  display: flex;
+  height: 100%;
+}
+
+#actividades, 
+#equipo, 
+#anotaciones{
+  width: 33%;
+  padding: 20px;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+ul.enlaces{
+  width: max-content;
+  margin: 0 auto;
+  padding: 0;
+  text-align: left; 
+}
+
+ul.enlaces li{
+  list-style-type: none;
+  margin-bottom: 8px; 
+}
+
+#actividades,
+#anotaciones{
+  ul{
+    margin: 0 auto;
+    padding: 0;
+    text-align: left; 
+  }
+
+  li{
+    margin-bottom: 8px; 
+  }
+
+  p{
+    font-weight: bold;
+  }
+}
+
+a:hover{
+  text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  .contenedor {
+    flex-direction: column;
+    padding: 0 16px; 
+  }
+
+  #equipo,
+  #actividades,
+  #anotaciones {
+    width: 100%;
+  }
+
+  ul.enlaces {
+    width: 100%;
+    padding-left: 0;
+  }
+
+  ul.enlaces li {
+    text-align: center;
+  }
+}
