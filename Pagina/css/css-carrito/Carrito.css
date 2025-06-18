@@ -5,108 +5,7 @@
   margin: auto;
 }
 
-.botones-dias {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 10px;
-  margin: 20px 0;
-}
-
-.botones-dias button {
-  background-color: #f0f0f0;
-  border: 2px solid #ccc;
-  border-radius: 10px;
-  padding: 10px 15px;
-  cursor: pointer;
-  font-weight: bold;
-}
-
-.botones-dias button:hover {
-  background-color: #d1eaff;
-}
-
-.mes {
-  margin: 30px 0 15px;
-}
-
-.calendario {
-  display: grid;
-  grid-template-columns: repeat(7, 1fr);
-  gap: 8px;
-  background-color: white;
-  padding: 10px;
-  border-radius: 10px;
-}
-
-.calendario div {
-  background-color: #eee;
-  padding: 10px;
-  border-radius: 8px;
-  min-height: 60px;
-  font-size: 14px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-.calendario .activo {
-  background-color: #e0f0ff;
-  color: #000;
-  font-weight: bold;
-}
-
-.mes button {
-  padding: 5px 10px;
-  font-size: 18px;
-  background-color: #97979725;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-}
-
-.mes button:hover {
-  background-color: #9797976b;
-}
-
-.calendario .pasado {
-  background-color: #ccc;
-  color: #777;
-  font-weight: normal;
-}
-
-.calendario .activo {
-  background-color: #cce6ff;
-  font-weight: bold;
-  color:#0077a5;
-}
-
-.mes {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;  
-  gap: 10px;
-  margin: 20px 0;
-}
-
-.dias-semana {
-  display: grid;
-  grid-template-columns: repeat(7, 1fr);
-  gap: 8px;
-  font-weight: bold;
-  margin-bottom: 10px;  
-  margin-top: 0px;   
-  color: #333;
-}
-
-.navegacion-mes {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-}
-
+/*BOTONES*/
 .botones-dias {
   display: flex;
   justify-content: center;
@@ -138,19 +37,105 @@
 .botones-dias button:hover {
   transform: translateY(-3px);
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  background-color: #d1eaff;
 }
 
-
-.imagen-oasis-de-los-suenos {
-  background-image: url('../img/Oaisis\ de\ los\ sueños.jpg');
+/*CALENDARIO*/
+.calendario {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 8px;
+  background-color: white;
+  padding: 10px;
+  border-radius: 10px;
 }
 
-.imagen-reino-del-manana {
-  background-image: url('../img/Reino\ del\ mañana.jpg');
+.calendario div {
+  background-color: #eee;
+  padding: 10px;
+  border-radius: 8px;
+  min-height: 60px;
+  font-size: 14px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
-.imagen-tierra-de-leyendas {
-  background-image: url('../img/Tierra\ de\ leyendas.jpg');
+.calendario .pasado {
+  background-color: #ccc;
+  color: #777;
+  font-weight: normal;
+}
+
+.calendario .activo {
+  background-color: #cce6ff;
+  font-weight: bold;
+  color:#0077a5;
+}
+
+.mes {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;  
+  gap: 10px;
+  margin: 20px 0;
+}
+
+.mes button {
+  padding: 5px 10px;
+  font-size: 18px;
+  background-color: #97979725;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.mes button:hover {
+  background-color: #9797976b;
+}
+
+.dias-semana {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 8px;
+  font-weight: bold;
+  margin-bottom: 10px;  
+  margin-top: 0px;   
+  color: #333;
+}
+
+.navegacion-mes {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+/*DIV - Contenedor zonas*/
+.contenedor-zonas {
+  background-color: #e2e1e164;
+  max-height: 100%;
+  margin: 40px auto;
+  padding: 30px 50px;
+  border-radius: 25px;
+  text-align: center;
+}
+
+ /*DIV - Zonas*/
+.zonas {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+  
+  /*DIV - Zona*/
+.zona {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: auto;
 }
 
 .titulo-verde {
@@ -165,41 +150,15 @@
   margin-top: 10px;
 }
 
-.contenedor-zonas {
-  background-color: #e2e1e164;
-  max-height: 100%;
-  margin: 40px auto;
-  padding: 30px 50px;
-  border-radius: 25px;
-  text-align: center;
-}
-
-.contenedor-zonas h2{
-  color: #0077a5;
-}
-
-.zonas {
-  display: flex;
-  justify-content: space-between; 
-  gap: 40px;
-  flex-wrap: nowrap;
-}
-
-.zona {
-  flex: 1;
-  max-width: 33%; /* antes estaba en 50% o 30% */
+.img-zona img{
   border-radius: 15px;
-  overflow: hidden;
-  text-align: center;
+  scale: 1.6;
+  padding: 10px;
+  margin-top: 10px;
+  margin: 10px;
 }
 
-.zona img {
-  width: 100%;
-  height: 200px; /* aumentá este valor si querés aún más grande */
-  object-fit: cover;
-  display: block;
-}
-
+/*DIV - Contenedor hospedaje*/
 .contenedor-hospedaje {
   background-color: #e2e1e164;
   padding: 30px;
@@ -212,7 +171,6 @@
 .contenedor-hospedaje h2 {
   font-size: 26px;
   font-weight: bold;
-  color: #0077cc;
   margin-bottom: 10px;
 }
 
@@ -233,6 +191,7 @@
   color: #444;
 }
 
+ /*BOTONES*/
 .botones-hospedaje {
   display: flex;
   justify-content: center;
@@ -256,7 +215,7 @@
 }
 
 .btn-gris {
-  background-color: #555;
+  background-color: #737272;
   color: white;
   border: none;
   padding: 10px 18px;
@@ -270,6 +229,7 @@
   background-color: #333;
 }
 
+/*DIV - Contendor 1*/
 .contenedor1 {
   background-color: #e2e1e164;
   width: auto;
@@ -287,16 +247,15 @@
 .ticket{
   scale: 3;
 }
-
+ 
+ /*DIV - Contenido*/
 .contenido {
   flex: 1;
 }
 
-.contenido h3 {
-  color: #0c5d85;
-  font-weight: 700;
+.contenido h2 {
+  font-size: 30px;
   margin-bottom: 20px;
-  font-size: 1rem;
 }
 
 .contenido p {
@@ -306,6 +265,13 @@
 
 .contenido p b {
   font-weight: 700;
+}
+
+.linea-divisoria {
+  width: 60%;
+  height: 1px;
+  background-color: black;
+  margin: 10px 0;
 }
 
 .detalle {
@@ -342,23 +308,21 @@
   color: white;
 }
 
-.resaltar {
-  display: inline-block;
-  margin-left: 5px;
-  background-color: #1d9af2;
-  font-weight: 700;
-  border-radius: 50%;
-  width: 28px;
-  height: 28px;
-  line-height: 28px;
-  text-align: center;
-  vertical-align: middle;
-  font-size: 1rem;
+.boton:hover {
+  background-color: #09a514;
 }
 
-.linea-divisoria {
-  width: 60%;
-  height: 1px;
-  background-color: black;
-  margin: 10px 0;
+h2{
+  color: #0077a5;
+}
+
+/**/
+a{
+    text-decoration: none;
+    color: white;
+}
+
+.dreams-in-the-clouds{
+  text-decoration: none;
+  color: black;
 }

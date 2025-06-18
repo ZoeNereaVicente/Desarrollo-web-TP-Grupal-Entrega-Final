@@ -1,3 +1,4 @@
+/*BODY*/
 body {
     display: flex;
     justify-content: center;
@@ -6,6 +7,7 @@ body {
     margin: 0;
 }
 
+/*MAIN*/
 main {
     display: flex;
     justify-content: center;
@@ -13,6 +15,7 @@ main {
     height: 100vh;
 }
 
+/*DIV - Ventana error*/
 .ventana-error {
     background-color: #e2dddd4a;
     padding: 30px;
@@ -22,8 +25,14 @@ main {
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
     display: flex;
     flex-direction: column;
-    align-items: center; /* Centra todos los elementos dentro del contenedor */
-    justify-content: center; /* Asegura que el contenido esté bien distribuido */
+    align-items: center;
+    justify-content: center;
+}
+
+img{
+    width: 50px;
+    height: 50px;
+    margin-bottom: 10px;
 }
 
 h2 {
@@ -37,6 +46,7 @@ h2 {
     margin-bottom: 20px;
 }
 
+ /*DIV - Logo tarjetas*/
 .logos {
     display: flex;
     justify-content: center;
@@ -50,6 +60,7 @@ h2 {
     border-radius: 10%;
 }
 
+/*BOTONES*/
 .botones {
     display: flex;
     flex-direction: column; 
@@ -79,8 +90,8 @@ button {
     width: 40%;
 }
 
-img{
-    width: 50px;
-    height: 50px;
-    margin-bottom: 10px;
+/**/
+a{
+    text-decoration: none;
+    color: white;
 }

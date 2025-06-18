@@ -1,3 +1,4 @@
+/*BODY*/
 body {
     display: flex;
     justify-content: center;
@@ -6,6 +7,7 @@ body {
     margin: 0;
 }
 
+/*DIV - Ventana error*/
 .ventana-error {
     background-color: #e2dddd4a;
     padding: 30px;
@@ -15,13 +17,10 @@ body {
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
 }
 
+ /*Error img*/
 .icono-error img {
     width: 50px;
     height: 50px;
-    margin-bottom: 10px;
-}
-
-h2 {
     margin-bottom: 10px;
 }
 
@@ -31,6 +30,7 @@ h2 {
     margin-bottom: 20px;
 }
 
+ /*BOTONES*/
 .botones {
     display: flex;
     flex-direction: column;
@@ -57,4 +57,14 @@ button {
     background-color: #0077a5;
     color: white;
     width: 25%;
+}
+
+/**/
+h2 {
+    margin-bottom: 10px;
+}
+
+a{
+    text-decoration: none;
+    color: white;
 }

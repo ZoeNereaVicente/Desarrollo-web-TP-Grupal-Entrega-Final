@@ -1,3 +1,4 @@
+/*BODY*/
 body {
     display: flex;
     justify-content: center;
@@ -6,6 +7,7 @@ body {
     margin: 0;
 }
 
+/*DIV- Ventana confirmación*/
 .ventana-confirmacion {
     background-color: #e2dddd4a;
     padding: 30px;
@@ -13,11 +15,6 @@ body {
     text-align: center;
     border-radius: 12px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
-}
-
-h2 {
-    color: #0077a5;
-    margin-bottom: 10px;
 }
 
 .mensaje {
@@ -37,6 +34,7 @@ h2 {
     color: #0077a5;
 }
 
+/*BOTONES*/
 .botones {
     display: flex;
     flex-direction: column;
@@ -72,4 +70,10 @@ button {
     font-size: 12px;
     background-color: #d9534f;
     color: white;
+}
+
+/**/
+h2 {
+    color: #0077a5;
+    margin-bottom: 10px;
 }
