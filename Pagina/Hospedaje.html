@@ -49,7 +49,7 @@
             <p>Hospedate la cantidad de días que adquieras<br>
             sólo por <strong>499,9usd</strong> <button class="añadir">Añadir a MiExperiencia</button></p>
             <div class="acciones-carrito">
-                <button class="pagar">Ir a pagar</button>
+                <button class="pagar"><a href="./Carrito/Pagos.html">Ir a pagar</a></button>
                 <button class="vaciar">Vaciar Carrito</button>
             </div>
         </div>
@@ -76,6 +76,61 @@
             <img src="img/Foto hotel 4.jpg" alt="Foto hotel">
             <img src="img/Foto hotel 5.jpg" alt="Foto hotel">
         </div>
+        <!--Inserto Bot de Soporte-->
+            <!-- Botón flotante para abrir el bot -->
+            <button id="abrirBot" onclick="document.getElementById('botContainer').style.display='block'; this.style.display='none'"
+            style="
+                position: fixed;
+                bottom: 20px;
+                right: 20px;
+                z-index: 1000;
+                width: 60px;
+                height: 60px;
+                border-radius: 50%;
+                border: none;
+                background-color: #004AAD;
+                color: white;
+                font-size: 28px;
+                cursor: pointer;
+                box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);">
+            💬
+            </button>
+
+            <!-- Contenedor del iframe del bot -->
+            <div id="botContainer" style="display: none; position: fixed; bottom: 20px; right: 20px; z-index: 1000;">
+            <div style="position: relative;">
+                <!-- Botón para cerrar -->
+                <button onclick="document.getElementById('botContainer').style.display='none'; document.getElementById('abrirBot').style.display='block';"
+                style="
+                    position: absolute;
+                    top: -10px;
+                    right: -10px;
+                    background: #ff4d4d;
+                    color: white;
+                    border: none;
+                    border-radius: 50%;
+                    width: 24px;
+                    height: 24px;
+                    font-weight: bold;
+                    cursor: pointer;
+                    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);">
+                ✕
+                </button>
+                
+                <!-- El bot Zoho -->
+                <iframe
+                src="https://gc.zohopublic.com/org/890772408/flows/27929000000002163/embed"
+                title="DisneyBot"
+                frameborder="0"
+                width="350"
+                height="500"
+                style="
+                    border-radius: 15px;
+                    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+                    overflow: hidden;">
+                </iframe>
+            </div>
+            </div>
     </main>
     <footer>
         <p>Trabajo grupal - Materia Diseño y Desarrollo Web - Curso 15130 - Grupo 4</p>

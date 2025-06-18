@@ -49,38 +49,12 @@
             <p>Hospedate la cantidad de días que adquieras<br>
             sólo por <strong>499,9usd</strong> <button class="añadir">Añadir a MiExperiencia</button></p>
             <div class="acciones-carrito">
-                <button class="pagar">Ir a pagar</button>
+                <button class="pagar"><a href="./Carrito/Pagos.html">Ir a pagar</a></button>
                 <button class="vaciar">Vaciar Carrito</button>
             </div>
         </div>
     </header>
     <main>
-        <div class="buscador">
-            <select class="select">
-                <option>Cantidad de días</option>
-                <option>3 días</option>
-                <option>5 días</option>
-                <option>7 días</option>
-            </select>
-            <button class="boton-secundario">Fecha<br><span></span></button>
-            <div class="contador">
-                <label>Mayores</label>
-                <div class="input-num">
-                    <button>-</button>
-                        <input type="number" value="1" min="0">
-                    <button>+</button>
-                </div>
-            </div>
-            <div class="contador">
-                <label>Menores</label>
-                <div class="input-num">
-                    <button>-</button>
-                        <input type="number" value="0" min="0">
-                    <button>+</button>
-                </div>
-            </div>
-            <button class="boton-principal">Buscar Precios</button>
-        </div>
         <div>
             <video width="1400" height="1100" controls style="display: block; margin: 0 auto;">
                 <source src="img/Video-inicio.mp4" type="video/mp4">
@@ -89,7 +63,7 @@
         <div>
             <h2>Bienvenido a</h2>
             <img src="img/Logo Disneyland Azul.png" alt="Logo Disney Abu Dhabi Azul" class="Logo-Disney">
-            <button class="boton">Que comience la magia</button>
+            <button id="btn-magia" class="boton">Que comience la magia</button>
         </div>
         <div class="contenedor">
             <div class="contenedor-1">
@@ -136,7 +110,6 @@
         <div class="mapa">
             <img src="img/Mapa-Disneyland.png" alt="" class="mapa-sitio">
         </div>
-        <p>Posiciónate en un lugar del mapa y conoce la magia</p>
         <div class="precios">
             <div class="tarjeta">
                 <h3>Aventuras de Oasis</h3>
@@ -150,7 +123,7 @@
                     <li>Recarga ilimitada de batidos y bebidas.</li>
                 </ul>
                 <h4>$359,99</h4>
-                <button class="boton">Comprar</button>
+                <button class="boton"><a href="Carrito/Carrito.html">Comprar</a></button>
             </div>
             <div class="tarjeta">
                 <h3>TecnoMagia</h3>
@@ -164,7 +137,7 @@
                     <li>Recarga ilimitada de batidos y bebidas.</li>
                 </ul>
                 <h4>$359,99</h4>
-                <button class="boton">Comprar</button>
+                <button class="boton"><a href="Carrito/Carrito.html">Comprar</a></button>
             </div>
             <div class="tarjeta">
                 <h3>Una leyenda serás</h3>
@@ -178,9 +151,64 @@
                     <li>Recarga ilimitada de batidos y bebidas.</li>
                 </ul>
                 <h4>$359,99</h4>
-                <button class="boton">Comprar</button>
+                <button class="boton"><a href="Carrito/Carrito.html">Comprar</a></button>
             </div>
         </div>
+        <!--Inserto Bot de Soporte-->
+            <!-- Botón flotante para abrir el bot -->
+            <button id="abrirBot" onclick="document.getElementById('botContainer').style.display='block'; this.style.display='none'"
+            style="
+                position: fixed;
+                bottom: 20px;
+                right: 20px;
+                z-index: 1000;
+                width: 60px;
+                height: 60px;
+                border-radius: 50%;
+                border: none;
+                background-color: #004AAD;
+                color: white;
+                font-size: 28px;
+                cursor: pointer;
+                box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);">
+            💬
+            </button>
+
+            <!-- Contenedor del iframe del bot -->
+            <div id="botContainer" style="display: none; position: fixed; bottom: 20px; right: 20px; z-index: 1000;">
+            <div style="position: relative;">
+                <!-- Botón para cerrar -->
+                <button onclick="document.getElementById('botContainer').style.display='none'; document.getElementById('abrirBot').style.display='block';"
+                style="
+                    position: absolute;
+                    top: -10px;
+                    right: -10px;
+                    background: #ff4d4d;
+                    color: white;
+                    border: none;
+                    border-radius: 50%;
+                    width: 24px;
+                    height: 24px;
+                    font-weight: bold;
+                    cursor: pointer;
+                    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);">
+                ✕
+                </button>
+                
+                <!-- El bot Zoho -->
+                <iframe
+                src="https://gc.zohopublic.com/org/890772408/flows/27929000000002163/embed"
+                title="DisneyBot"
+                frameborder="0"
+                width="350"
+                height="500"
+                style="
+                    border-radius: 15px;
+                    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+                    overflow: hidden;">
+                </iframe>
+            </div>
+            </div>
     </main>
     <footer>
         <p>Trabajo grupal - Materia Diseño y Desarrollo Web - Curso 15130 - Grupo 4</p>
@@ -196,5 +224,6 @@
         <img src="img/Logo_UADE.svg" alt="Logo UADE">
     </footer>
     <script src="index.js"></script>
+    <script src="boton.js"></script>
 </body>
 </html>
