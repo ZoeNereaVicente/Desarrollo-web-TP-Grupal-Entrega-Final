@@ -10,35 +10,45 @@
     <header>
     </header>
     <main>
-        <div class="container">
-        <h1>PAGAR</h1>
-        <img src="img/Logo Disneyland Azul.png" alt="Logo">
-        <p class="total">TOTAL: 1198.9usd</p>
-        <p class="precio-estimado">Precio estimado en Pesos argentinos: $1.390.724</p>
-        <p class="conversion">1 Dólar = $1.160 pesos argentinos</p>
-        <h3>Detalle de la compra:</h3>
-        <p>2 x Elige la Magia de tu Destino. Mayores de 10 años. 119.9usd por ticket / día.</p>
-        <h3>DATOS DE PAGO</h3>
-        <form>
-            <label for="nombre">Nombre completo Titular de la tarjeta</label>
-            <input type="text" id="nombre" name="nombre" placeholder="Tal cual figura en la tarjeta de crédito/débito">            
-            <label for="dni">DNI del Titular</label>
-            <input type="text" id="dni" name="dni" placeholder="Sin espacios ni guiones">            
-            <label for="email">E-Mail</label>
-            <input type="email" id="email" name="email" placeholder="Acá recibirás tus tickets">            
-            <label for="numero">Número de la tarjeta</label>
-            <input type="text" id="numero" name="numero" placeholder="Sin espacios ni guiones">           
-            <label for="fecha">Fecha de vencimiento</label>
-            <input type="text" id="fecha" name="fecha" placeholder="MM/AA">            
-            <label for="codigo">Código de seguridad</label>
-            <input type="text" id="codigo" name="codigo" placeholder="CVV">
-            <label for="cuotas">Cuotas</label>
-            <select id="cuotas" name="cuotas">
-                <option value="1">x1 cuota sin interés de dólares: $1198.99</option>
-            </select>
-            <button type="submit">Comprar</button>
-        </form>
+        <div class="contenedor">
+            <h1>PAGAR</h1>
+            <img src="../img/Logo Disneyland Azul.png" alt="Logo">
+            <p class="total">TOTAL: 1198.9usd</p>
+            <p class="precio-estimado">Precio estimado en Pesos argentinos: $1.390.724</p>
+            <p class="conversion">1 Dólar = $1.160 pesos argentinos</p>
+            <h3>Detalle de la compra:</h3>
+            <p>2 x Elige la Magia de tu Destino. Mayores de 10 años. 119.9usd por ticket / día.</p>
+            <h3>DATOS DE PAGO</h3>
+            <form id="pagoForm">
+                <label for="nombre">Nombre completo Titular de la tarjeta</label>
+                <input type="text" id="nombre" name="nombre" required>
+
+                <label for="dni">DNI del Titular</label>
+                <input type="text" id="dni" name="dni" required>
+
+                <label for="email">E-Mail</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="numero">Número de la tarjeta</label>
+                <input type="text" id="numero" name="numero" required>
+
+                <label for="fecha">Fecha de vencimiento</label>
+                <input type="text" id="fecha" name="fecha" required>
+
+                <label for="codigo">Código de seguridad</label>
+                <input type="text" id="codigo" name="codigo" required>
+
+                <label for="cuotas">Cuotas</label>
+                <select id="cuotas" name="cuotas">
+                    <option value="1">x1 cuota sin interés de dólares: $1198.99</option>
+                </select>
+
+                <button onclick="validarFormulario(event)">Comprar</button>
+                <div class="botones">
+                    <button class="btn-verde"><a href="fondos-insuficientes.html">Reintentar</a></button>
+                </div>
+            </form>
         </div>
     </main>
-    <script src="index.js"></script>
+    <script src="carrito.js"></script>
 </body>

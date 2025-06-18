@@ -10,15 +10,15 @@
 <body>
     <header>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-        <img src="img/Logo Disneyland Blanco.png" alt="Logo Disney Abu Dhabi Blanco" class="Logo">
+        <img src="../img/Logo Disneyland Blanco.png" alt="Logo Disney Abu Dhabi Blanco" class="Logo">
         <!--Navbar Computadora-->
         <nav class="desktop-menu">
             <ul>
-                <li><a href="index.html"style="text-decoration: none;" >Home</a></li>
-                <li><a href="Tickets.html"style="text-decoration: none;">Tickets</a></li>
-                <li><a href="Parque.html"style="text-decoration: none;">Conocé el parque</a></li>
-                <li><a href="Hospedaje.html"style="text-decoration: none;">Hospedaje mágico</a></li>
-                <li><a href="Reglas.html"style="text-decoration: none;">Reglas</a></li>
+                <li><a href="../index.html"style="text-decoration: none;" >Home</a></li>
+                <li><a href="../Tickets.html"style="text-decoration: none;">Tickets</a></li>
+                <li><a href="../Parque.html"style="text-decoration: none;">Conocé el parque</a></li>
+                <li><a href="../Hospedaje.html"style="text-decoration: none;">Hospedaje mágico</a></li>
+                <li><a href="../Reglas.html"style="text-decoration: none;">Reglas</a></li>
             </ul>
        </nav>
         <button class="menu-toggle">
@@ -34,10 +34,24 @@
                 <li><a href="Reglas.html"style="text-decoration: none;">Reglas</a></li>
             </ul>
         </nav>
-        <button class="carrito-btn" onclick="agregarAlCarrito()">
-            <i class="fas fa-shopping-cart"></i>
-            <span id="contador">0</span>
+        <button class="carrito-toggle" onclick="toggleCarrito()">
+            <img src="../img/lampara-genio.png" alt="Carrito" style="width: 40px; height: 30px;">
         </button>
+        <div id="carrito-panel" class="carrito-panel oculto">
+            <h2>¡Tu experiencia está llena de magia!</h2>
+            <p class="carrito">Actualmente llevás:</p>
+            <ul>
+                <li>x2 - Un mundo Ideal.</li>
+                <li>x1 - Experiencia Tecnomagia</li>
+            </ul>
+            <hr>
+            <h3>¡Duerme en Disney Abu Dhabi!</h3>
+            <p >Hospedate la cantidad de días que adquieras <br> sólo por <strong>499,9usd</strong><button class="añadir">Añadir a MiExperiencia</button></p>
+            <div class="acciones-carrito">
+                <button class="pagar">Ir a pagar</button>
+                <button class="vaciar">Vaciar Carrito</button>
+            </div>
+        </div>
     </header>
     <main>
         <div class="contenedor">
@@ -74,28 +88,34 @@
                 <!-- Calendario generado dinámicamente -->
             </div>
             <div class="contenedor-zonas">
-                <h2>[N cantidad de días] en:</h2>
+                <h2>5 días en:</h2>
                 <div class="zonas">
-                    <div class="zona">
-                        <div class="imagen-oasis-de-los-suenos"></div>
+                    <div class="zona">     
+                        <div class="img-zona">
+                            <img src="../img/Oaisis de los sueños.jpg" alt="">
+                        </div>
                         <p class="titulo-verde">Oasis de los Sueños</p>
                     </div>
-                    <div class="zona">
-                        <div class="imagen-reino-del-manana"></div>
+                    <div class="zona">    
+                        <div class="img-zona">
+                            <img src="../img/Reino del mañana.jpg" alt="">  
+                        </div>      
                         <p class="titulo-celeste">Reino del Mañana</p>
                     </div>
-                    <div class="zona">
-                        <div class="imagen-tierra-de-leyendas"></div>
+                    <div class="zona">        
+                        <div class="img-zona" >
+                            <img src="../img/Tierra de leyendas.jpg" alt=""> 
+                        </div>            
                         <p class="titulo-verde">Tierra de Leyendas</p>
                     </div>
                 </div>
             </div>
         </div>
         <div class="contenedor-hospedaje">
-            <h2>Hospedarte en <img src="./img/Logo Disneyland Azul.png" alt="Logo Disney Abu Dhabi Azul" class="Logo"></h2>
-            <p class="precio">[N cant. días] sólo por: <strong>499.9usd +</strong></p>
+            <h2>Hospedarte en <img src="../img/Logo Disneyland Azul.png" alt="Logo Disney Abu Dhabi Azul" class="Logo"></h2>
+            <p class="precio">5 dias sólo por: <strong>499.9usd +</strong></p>
             <p class="detalle">
-            Hospedaje en la <img src="./img/The Walt Disney Suite.png" alt="" class=""> con desayuno y cena incluidos, en <a href="Hospedaje.html"style="text-decoration: none;">Dreams in the clouds</a>, dentro del parque.
+            Hospedaje en la <img src="../img/The Walt Disney Suite.png" alt="" class=""> con desayuno y cena incluidos, en <a href="Hospedaje.html"style="text-decoration: none;" class="dreams-in-the-clouds">Dreams in the clouds</a>, dentro del parque.
             </p>
             <div class="botones-hospedaje">
                 <button class="btn-azul">Añadir al carrito</button>
@@ -104,10 +124,10 @@
         </div>
         <div class="contenedor1">
             <div class="imagen">
-                <img src="img/Elige la magia de tu destino.png" alt="Tickets magia destino" class="ticket"/>
+                <img src="../img/Elige la magia de tu destino.png" alt="Tickets magia destino" class="ticket"/>
             </div>
             <div class="contenido">
-                <h3>Elige la magia de tu destino</h3>
+                <h2>Elige la magia de tu destino</h2>
                 <p><b>Cantidad de tickets:</b> 2</p>
                 <p><b>Cantidad de días:</b> 5</p>
                 <p><b>Parque seleccionado:</b> Reino del Mañana</p>
@@ -117,7 +137,7 @@
                 <p class="total">TOTAL: 1198.9usd</p>
                 <p><b>Precio estimado en<br />Pesos argentinos:</b> <span class="precio-ars">$1.390.724</span></p>
                 <p class="cotizacion">1 Dólar = $1.160 pesos argentinos</p>
-                <button class="boton">Continuar</button>
+                <button class="boton"><a href="Pagos.html">Siguiente</a></button>
             </div>
         </div>
     </main>
@@ -132,7 +152,7 @@
             <li>Rodriguez, Joaquin</li>
             <li>Vicente, Zoe Nerea</li>
         </ul>
-        <img src="img/Logo_UADE.svg" alt="Logo UADE">
+        <img src="../img/Logo_UADE.svg" alt="Logo UADE">
     </footer>
     <script src="carrito.js"></script>
 </body>
