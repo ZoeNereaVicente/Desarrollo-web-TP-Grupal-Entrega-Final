@@ -131,6 +131,7 @@ nav ul{
   font-size: 18px;
   margin-bottom: 10px;
   text-align: right;
+  color: white;
 }
 
 .carrito-panel ul {
@@ -143,7 +144,11 @@ nav ul{
   text-align: right;
 }
 
-.carrito{
+.carrito-panel{
+  text-align: center;
+}
+
+.carrito {
   text-align: right;
 }
 
